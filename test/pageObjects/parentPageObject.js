@@ -11,6 +11,17 @@ class ParentPageObject {
       'Text does not match expected'
     )
   }
-}
 
+  isSearchResultAvailable (element, expectedText) {
+     browser.waitUntil(
+     () => {
+        const resultMessage = 'search results not available'
+        return expect(element.getText(), resultMessage).to.include(expectedText)
+       },
+       TEN_SECOND_TIMEOUT,
+       'search results not available'
+     )
+  }
+
+}
 module.exports = ParentPageObject

@@ -39,7 +39,7 @@ exports.config = {
   // ===================
 
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: 'warn',
+  logLevel: 'debug',
 
   // bail (default is 0 - don't bail, run all tests).
   bail: 0,
@@ -48,7 +48,7 @@ exports.config = {
   // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
   // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
   // gets prepended directly.
-  baseUrl: 'https://studentbeans.com/',
+  baseUrl: 'https://studentbeans.com',
 
   // Default timeout for all waitFor* commands.
   waitforTimeout: 10000,
